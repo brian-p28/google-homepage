@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
 <style>
-    #lga{
-        height: 233px;
-        margin-top: 89px;
-        margin-left: 335px;
+    #img{
+        height: 120px;
+        margin-top: 50px;
+        padding-top: 109px;
     }
     @media only screen and(max-height: 768px){#lga{margin-top: 47px}}
     
@@ -25,17 +25,34 @@
         margin: 0;
         padding: 0;
         overflow:hidden;
-        background-color: #d4d4d4;
+        background-color: #f0f0f0;
     }
 
     li{
-        display: inline;
         float: left;
+        
     }
 
     a{
         display:block;
         padding: 8px;
+        color: black;
+    }
+
+    input[type=text]{
+        width:600px; 
+        border-radius:25px;
+        border:1px solid rgb(223, 223, 223);
+        padding:14px 20px;
+        margin:0px 0px 25px;
+        box-sizing: border-box;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 </head>
@@ -48,16 +65,22 @@
             <li><a href="#">Store</a></li>
             <li><a href="#">Gmail</a></li>
             <li><a href="#">Images</a></li>
-            <li><a href="#">Sign In</a></li>
+            <li style="float:right"><a href="#">Sign In</a></li>
         </ul>
     </header>
 
     <main>
-        <div id="lga" >
-            <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top: 109px">
+        <div id="img" >
+            <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         </div>
 
-        <div class="RNNXgb">
+        <form>
+            <input type="text">
+        </form>
+
+        <div>
+            <input type="button">
+            <input type="button">
         </div>
     </main>
 
